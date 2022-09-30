@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  background-color: #1e1e2e;
 }
 
 .main {
@@ -53,16 +54,19 @@ body {
   width: 100%;
   min-height: 75vh;
   color: white;
-  display: flex;
+  display: block;
+  padding: 50px;
+  box-sizing: border-box;
   flex-direction: column;
 }
 
 .content {
   border-radius: 20px;
-  width: 90%;
-  margin: 5vh;
+  width: 100%;
   min-height: 90vh;
+  box-sizing: border-box;
   display: flex;
+  padding: 10px;
   flex-direction: row;
   background: rgb(19, 23, 34);
   background: linear-gradient(
@@ -79,9 +83,10 @@ body {
 .about {
   width: 50%;
   font-family: "Lato", sans-serif;
-  padding: 5vh;
   color: #d8dee9;
   font-size: 24px;
+  padding: 50px;
+  box-sizing: border-box;
 }
 .about > h1 {
   font-family: "Archivo Black", sans-serif;
@@ -90,13 +95,16 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  box-sizing: border-box;
+  padding: 20px;
   width: 50%;
-  padding: 5vh;
 }
 .stat-box {
   width: 90%;
   height: 90px;
-  padding: 1rem;
+  padding: 20px;
+  box-sizing: border-box;
+
   color: #d8dee9;
   font-weight: 700;
   font-size: 20px;
@@ -145,7 +153,9 @@ body {
   font-size: 20px;
   color: white;
   padding: 50px;
-  margin: 3rem;
+  margin: 50px;
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -211,6 +221,9 @@ ul li:before {
 
 /* TODO: fix website for mobile devices so iToddlers can use it */
 @media screen and (max-width: 800px) {
+  .under {
+    padding: 20px;
+  }
   .main,
   .content,
   .stats,
@@ -218,29 +231,33 @@ ul li:before {
     flex-direction: column;
   }
 
-  .stats {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .about,
   #month,
   #three,
-  #year,
+  #year {
+    margin-top: 20px;
+    padding: 30px;
+    margin: 20px;
+    width: 90%;
+  }
+  .about,
+  .stats,
+  .stat-row1,
   .leftbar {
     width: 100%;
   }
-  .stats {
-    width: 100%;
-  }
+  .stat-row2,
   .right {
     display: none;
   }
   .about {
-    font-size: 15px;
+    font-size: 20px;
+    padding: 15px;
   }
   .content {
-    margin: 20px;
+    background: linear-gradient(
+      180deg,
+      rgba(19, 23, 34, 1) 40%,
+      rgba(8, 153, 129, 1) 100%
+    );
   }
 }
