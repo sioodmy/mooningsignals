@@ -208,12 +208,20 @@ ul li:before {
 .button:hover {
   background-color: #0ed17f;
 }
+
+/* TODO: fix website for mobile devices so iToddlers can use it */
 @media screen and (max-width: 800px) {
   .main,
   .content,
   .stats,
   .membership {
     flex-direction: column;
+  }
+
+  .stats {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .about,
@@ -234,8 +242,5 @@ ul li:before {
   }
   .content {
     margin: 20px;
-  }
-  .membership {
-    display: none;
   }
 }

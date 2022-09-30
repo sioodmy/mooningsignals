@@ -1,3 +1,4 @@
+//this shit barely works
 const counters = document.querySelectorAll(".value");
 
 const speed = 1500;
