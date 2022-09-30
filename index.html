@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MooningSignals</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato&family=PT+Sans:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="leftbar">
+        <div class="logo"><span>Mooning</span><span>Signals</span></div>
+        <img src="logo.png" alt="" />
+        <span class="slogan">Let the people win!</span>
+      </div>
+      <div class="right"></div>
+    </div>
+
+    <div class="under">
+      <div class="content">
+        <div class="about">
+          <h1>Why mooning singals?</h1>
+          <p>
+            Professional chart analysis are very expensive, especially for
+            individuals. That's why we created mooning signals. Our goal is to
+            provide high quality resources such as technical analysis and
+            signals provided by full time daytraders payed by our membership
+            fee. We want reliable trading to be accessible to everyone and not
+            just the 1%.
+          </p>
+        </div>
+        <div class="stats" id="stats">
+          <div class="stat-row1">
+            <div class="stat-box">
+              Winrate
+              <span
+                >+
+                <div class="value" akhi="76.49">0</div>
+                %</span
+              >
+            </div>
+            <div class="stat-box">
+              Average return per trade
+              <span
+                >+
+                <div class="value" akhi="3.1">0</div>
+                %</span
+              >
+            </div>
+            <div class="stat-box">
+              Max loss
+              <span class="loss"
+                >-
+                <div class="value" akhi="1.98">0</div>
+                %</span
+              >
+            </div>
+            <div class="stat-box">
+              Max win
+              <span
+                >+
+                <div class="value" akhi="114.91">0</div>
+                %</span
+              >
+            </div>
+          </div>
+          <div class="stat-row2">
+            <div class="stat-box">
+              Most traded pair
+              <span> BTCBUSD </span>
+            </div>
+
+            <div class="stat-box">
+              Total trades
+              <span>
+                <div class="value" akhi="2034">0</div>
+              </span>
+            </div>
+            <div class="stat-box">
+              Total wins
+              <span>
+                <div class="value" akhi="1556">0</div>
+              </span>
+            </div>
+            <div class="stat-box">
+              Total losses
+              <span class="loss">
+                <div class="value" akhi="478">0</div>
+              </span>
+            </div>
+            <span class="disclaimer"
+              >* The above statistics are static and were last updated on
+              29/09/2022.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="membership">
+      <div class="plan" id="month">
+        <div>
+          <span class="plan-title">1 month access</span>
+          <ul>
+            <li>Access to our private Telegram channel</li>
+            <li>Accurate signals</li>
+            <li>Daily chart analysis by pro daytraders</li>
+            <li>Whales alert</li>
+            <li>Insider info</li>
+            <li>7 days refund policy</li>
+          </ul>
+        </div>
+        <div>
+          <span class="price">79$</span>
+          <div class="pay">
+            <a
+              class="button"
+              href="https://commerce.coinbase.com/checkout/1b760fc3-c985-4cb2-a7ed-44c89062e3f9"
+            >
+              Pay with Crypto
+            </a>
+            <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="three">
+        <div>
+          <span class="plan-title">3 months access</span>
+          <ul>
+            <li>Access to our private Telegram channel</li>
+            <li>Accurate signals</li>
+            <li>Daily chart analysis by pro daytraders</li>
+            <li>Whales alert</li>
+            <li>Insider info</li>
+            <li>7 days refund policy</li>
+          </ul>
+        </div>
+        <div>
+          <span class="price">149$</span>
+          <div class="pay">
+            <a
+              class="button"
+              href="https://commerce.coinbase.com/checkout/5283f735-583c-4dff-84ea-b4d6de59c210"
+            >
+              Pay with Crypto
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="year">
+        <div>
+          <span class="plan-title">1 year access</span>
+          <ul>
+            <li>Access to our private Telegram channel</li>
+            <li>Accurate signals</li>
+            <li>Daily chart analysis by pro daytraders</li>
+            <li>Whales alert</li>
+            <li>Insider info</li>
+            <li>7 days refund policy</li>
+          </ul>
+        </div>
+        <div>
+          <span class="price">699$</span>
+          <div class="pay">
+            <a
+              class="button"
+              href="https://commerce.coinbase.com/checkout/9e864401-5bd3-4361-9e32-bbb76184f343"
+            >
+              Pay with Crypto
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
